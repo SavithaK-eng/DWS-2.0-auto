@@ -171,7 +171,7 @@
               <av:Size x:Key="ShapeSize">200,66</av:Size>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
-          <Sequence DisplayName="Creation of holiday" sap:VirtualizedContainerService.HintSize="526,2242" sap2010:WorkflowViewState.IdRef="Sequence_2">
+          <Sequence DisplayName="Creation of holiday" sap:VirtualizedContainerService.HintSize="526,2388" sap2010:WorkflowViewState.IdRef="Sequence_2">
             <Sequence.Variables>
               <Variable x:TypeArguments="ui:GenericValue" Name="SelectOption" />
               <Variable x:TypeArguments="x:String" Name="Options" />
@@ -424,6 +424,31 @@
                 </ui:Click>
               </If.Else>
             </If>
+            <ui:ClickImage ContinueOnError="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" ClickType="CLICK_DOWN" DisplayName="Click Image 'chrome.exe  dws'" sap:VirtualizedContainerService.HintSize="484,106" sap2010:WorkflowViewState.IdRef="ClickImage_9" KeyModifiers="None" MouseButton="BTN_LEFT">
+              <ui:ClickImage.CursorPosition>
+                <ui:CursorPosition Position="Center">
+                  <ui:CursorPosition.OffsetX>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:CursorPosition.OffsetX>
+                  <ui:CursorPosition.OffsetY>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:CursorPosition.OffsetY>
+                </ui:CursorPosition>
+              </ui:ClickImage.CursorPosition>
+              <ui:ClickImage.Image>
+                <ui:ImageTarget Image="{x:Null}" Accuracy="0.8" Profile="Basic" TargetImageBase64="iVBORw0KGgoAAAANSUhEUgAAABIAAAB1CAYAAABDP7G1AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAABTSURBVGhD7cyhDcAwEMDA7L/tT/Al4QaBPUumd/Y2M0+DelAP6kE9qAf1oB7Ug3pQD+pBPagH9aAe1IN6UA/qQT2oB/WgHtSDelAP6v8AvQaqdj8+Z6Lq5U14SQAAAABJRU5ErkJggg==" />
+              </ui:ClickImage.Image>
+              <ui:ClickImage.Target>
+                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="8c62dd45-b1f4-4091-9543-8358a7ee8c7a" Selector="&lt;html app='chrome.exe' title='dws' /&gt;">
+                  <ui:Target.TimeoutMS>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:Target.TimeoutMS>
+                  <ui:Target.WaitForReady>
+                    <InArgument x:TypeArguments="ui:WaitForReady" />
+                  </ui:Target.WaitForReady>
+                </ui:Target>
+              </ui:ClickImage.Target>
+            </ui:ClickImage>
             <ui:ClickImage ContinueOnError="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click Image 'chrome.exe  dws'" sap:VirtualizedContainerService.HintSize="484,106" sap2010:WorkflowViewState.IdRef="ClickImage_6" KeyModifiers="None" MouseButton="BTN_LEFT">
               <ui:ClickImage.CursorPosition>
                 <ui:CursorPosition Position="Center">
@@ -528,7 +553,7 @@
                 </ui:CursorPosition>
               </ui:ClickImage.CursorPosition>
               <ui:ClickImage.Image>
-                <ui:ImageTarget Image="{x:Null}" Accuracy="0.8" Profile="Basic" TargetImageBase64="iVBORw0KGgoAAAANSUhEUgAAAC4AAAAcCAYAAAAeC42RAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAC1SURBVFhH7ZdRCsMgDIZ3aS/iqyDoObyHzx5CBF8ysiqU4phJRztZPvhBIUk/qEL7gEWw1rbVBlk85wzGmFdw/Y7Zuln+TzylBFprUEqxgr04gwtLvJQC3vuhECU4A2dxYIn31z6SoeTMsRFxTm4T5z74bD8i4hREfMfXxHvN6DLO9H9CxI/0GhE/IOIURHzHlPiyn7XIkj8Sv4CIX42IX82S4rVWcM613cYS4jFGCCG0HQLwBEdowyWrEFUyAAAAAElFTkSuQmCC" />
+                <ui:ImageTarget Image="{x:Null}" Accuracy="0.8" Profile="Basic" TargetImageBase64="iVBORw0KGgoAAAANSUhEUgAAAOIAAAAeCAYAAAAxQMK1AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAQgSURBVHhe7ZtXSzNBGEa/P+0f8VbwQhFEEPVCxYq9FxR7r2BHsdf344wZGeMm2Rg1G30OLMnuzk4Jc/JOSf6ZEKLoSEQhEoBEFCIBSEQhEoBEFCIBSEQhIri+vraKigp38D4TcdPlQiIKEYFEFKKIbG9vW3l5uZWVlX3q4FnyyBeJKESK29tbq6qqihQsn4M8yCsfYov49PRk8/PzVl9fb5WVldbU1GQzMzN5FTg9PW2Hh4eps5+Beg8ODro6+6O6utra2tpsc3PT3RcC/DAzSq58js8MU2OJ+PLyYlNTU7a8vPzWcXnd2dmxk5MTdx6Hrxbx5ubGtra27Pn5OXXlI9RzfHzczs/PU1de4YPi+ujoqD0+Pqau5ubh4cHW19fdq/hdJF5EMu3v78873Kbz1SIiFzJli2qZRAQEnp2ddZE+Lnd3dy7C8ip+FyUhYm9vb87MLy4urK+vzw39GhoabHFx8Z0k6SISVRChrq7OampqbGRkxK6urlJ3Xzk9PbXu7m6XJ8PipaUll+fa2tq74WZjY2OkbNlEBNo0MDDw1ja+bBhyUxZlUjZ1AOoelsnh2xOnLSLZ0AeQ6DMiQSHPxx6a0sl6enrs7OwsciiIhMPDw3Z5eenOEWBlZcU959OHInJ/YmLC9vf3Xf5wfHzsog1DTn/e1dXl8gaeIXohIRQaEYG6cd8PsXlFPF8n2ouo9/f37jwqIsZpi0g+iRcR6Gx7e3vW2dlptbW1TjofKWBhYcGOjo5SZ6/wDHNLL1IoIh0+akjInG9jY+NNkPQ8fUeHrxARcg2ZiZC+rVEi5mqLKA1KQsQQFjd2d3ettbXVdTQ6O50zfdjmD9/Jww6fPrQMD9LR0YlE2eal3xERKW9oaMgNL8M6+XpHiZirLaI0KDkRPUQJOiWdd2xsLGvUgXQRV1dX3fsofkpEPjA/RyTaEsHZ1ggjb1jvTCJma4soDeKI5NNELc7EeT4TsUUMO6aH+SDRg/nT3Nyc297IRtihiUAIkGkbINPQNKRQESkjXDWNSss1Fl6yiZirLaI0iCOST1MUEYl8bF+wcOGFpNP5vUVAyvb2dre3SBqOg4MDN3f0z4Qi0sFZ4CAPv4/HKiPnPgpGLdZQnp93kY56UTb3ovYDo+QCPiiuh/uI1JPyiXC8R1TeMycO680z1I00fA5x2iKSTxyRfJqiiAjIyLc+y/PMfVpaWtzGNp3QQ+cjejC/4mC4Gq4ahiICz7LFwVYHeXZ0dHyIgJQbbl8QvcIy+V0fz3OPL4F0SJs+f832yxrE8XNE8kX6ycnJd/Wmjs3NzS4NXwwIGactItnEEcmnKZqIQvx24ojk00hEIb6JQkQCiSjEFyARhUgArA8k/m9QQvwF9MdgIf4wElGIBCARhUgAElGIBCARhSg6Zv8BWpOivXroQXUAAAAASUVORK5CYII=" />
               </ui:ClickImage.Image>
               <ui:ClickImage.Target>
                 <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="b8101a1d-791b-4850-aae1-a9cfa0252a9d" Selector="&lt;html app='chrome.exe' title='dws' /&gt;">
